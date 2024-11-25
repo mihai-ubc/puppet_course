@@ -10,7 +10,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.define :puppet do |puppet|
     puppet.vm.network :private_network, ip: "172.16.56.10"
-    puppet.vm.network "forwarded_port", guest: 8081, host: 8081
     puppet.vm.hostname = "puppet.local"    
     puppet.vm.synced_folder ".", "/puppet_course"
     puppet.vm.provider :vmware_desktop do |vb|
@@ -27,6 +26,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define :db do |db|
     db.vm.network :private_network, ip: "172.16.56.12"
+    db.vm.network "forwarded_port", guest: 8081, host: 8081
     db.vm.hostname = "db.local"
     db.vm.synced_folder ".", "/puppet_course"
   end

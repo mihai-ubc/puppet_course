@@ -6,7 +6,9 @@ class profile::base {
   package { 'bash-completion':
     ensure => 'present',
   }
-
+  package { 'telnet':
+    ensure => 'present',
+  }
   user { 'mihai':
     ensure => 'present',
     groups => ['wheel'],
