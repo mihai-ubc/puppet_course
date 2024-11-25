@@ -3,3 +3,4 @@ name: puppet_course
 modules:
 - puppetlabs/apache
 - puppetlabs/mysql
+- puppetlabs/puppetdb
