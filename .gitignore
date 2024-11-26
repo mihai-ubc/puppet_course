@@ -8,6 +8,7 @@ bolt-debug.log
 .vagrant
 /modules/apache
 /modules/apt
+/modules/concat
 /modules/firewall
 /modules/inifile
 /modules/postgresql
