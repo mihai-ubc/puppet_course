@@ -6,3 +6,4 @@ bolt-debug.log
 .task_cache.json
 .rerun.json
 .vagrant
+/modules
