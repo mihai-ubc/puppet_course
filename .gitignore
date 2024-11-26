@@ -6,4 +6,12 @@ bolt-debug.log
 .task_cache.json
 .rerun.json
 .vagrant
-/modules
+/modules/apache
+/modules/apt
+/modules/firewall
+/modules/inifile
+/modules/postgresql
+/modules/puppetdb
+/modules/stdlib
+/modules/systemd
+
