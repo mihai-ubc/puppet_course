@@ -14,4 +14,11 @@ class profile::puppetserver {
     enable   => true,
     provider => 'systemd',
   }
+  # Configure the Puppet master to use puppetdb
+  class { 'puppetdb::master::config':
+    enable_reports          => true,
+    manage_report_processor => true,
+    puppetdb_server         => 'db.local',
+    puppetdb_port           => 8081,
+  }
 }

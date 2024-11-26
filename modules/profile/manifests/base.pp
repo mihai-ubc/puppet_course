@@ -9,6 +9,12 @@ class profile::base {
   package { 'telnet':
     ensure => 'present',
   }
+  package { 'bind-utils':
+    ensure => 'present',
+  }
+  package { 'net-tools':
+    ensure => 'present',
+  }
   user { 'mihai':
     ensure => 'present',
     groups => ['wheel'],
