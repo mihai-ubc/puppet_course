@@ -1,1 +1,10 @@
+# Instructions
+# make sure puppet_agent version is 8.x
+
+Run the following commands to get bolt going:
+
 echo "export BOLT_PROJECT='/puppet_course'" >> /root/.bashrc
+exec bash
+cat bolt-ssh-key.pub >> ~/.ssh/authorized_keys
+
+puppet config set server puppet.local
