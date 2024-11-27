@@ -4,3 +4,4 @@ modules:
 - puppetlabs/apache
 - puppetlabs/postgresql
 - puppetlabs/puppetdb
+- puppetlabs/puppet_agent

@@ -12,6 +12,7 @@ bolt-debug.log
 /modules/firewall
 /modules/inifile
 /modules/postgresql
+/modules/puppet_agent
 /modules/puppetdb
 /modules/stdlib
 /modules/systemd
