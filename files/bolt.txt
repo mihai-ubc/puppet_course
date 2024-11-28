@@ -7,4 +7,5 @@ echo "export BOLT_PROJECT='/puppet_course'" >> /root/.bashrc
 exec bash
 cat bolt-ssh-key.pub >> ~/.ssh/authorized_keys
 
+# set puppet server on nodes
 puppet config set server puppet.local
