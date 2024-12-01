@@ -9,3 +9,7 @@ cat bolt-ssh-key.pub >> ~/.ssh/authorized_keys
 
 # set puppet server on nodes
 puppet config set server puppet.local
+
+# puppet.db
+see /etc/puppetlabs/puppetdb/conf.d/jetty.ini
+puppetdb ssl-setup -f

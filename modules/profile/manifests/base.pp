@@ -15,6 +15,12 @@ class profile::base {
   package { 'net-tools':
     ensure => 'present',
   }
+  package { 'avahi':
+    ensure => 'present',
+  }
+  package { 'avahi-tools':
+    ensure => 'present',
+  }
   user { 'mihai':
     ensure => 'present',
     groups => ['wheel'],

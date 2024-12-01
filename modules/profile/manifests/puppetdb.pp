@@ -4,6 +4,6 @@ class profile::puppetdb {
   class { 'puppetdb':
     postgresql_ssl_on       => true,
     database_host           => 'db.local',
-    database_listen_address => '0.0.0.0',
+    database_listen_address => '172.16.10.12',
   }
 }
