@@ -1,5 +1,5 @@
 # site
-node 'db.local' { include role::db }
+node 'db.preda.ca' { include role::db }
 node default { include role::default }
-node 'puppet.local' { include role::puppetserver }
-node 'web.local' { include role::webserver }
+node 'puppet.preda.ca' { include role::puppetserver }
+node 'web.preda.ca' { include role::webserver }
