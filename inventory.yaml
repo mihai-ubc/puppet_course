@@ -4,9 +4,9 @@
 groups:
   - name: linux
     targets:
-      - db.preda.ca
-      - puppet.preda.ca
-      - web.preda.ca
+      - db.as.ubc.ca
+      - puppet.as.ubc.ca
+      - web.as.ubc.ca
     config:
       transport: ssh
       ssh:

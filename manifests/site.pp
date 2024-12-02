@@ -1,5 +1,5 @@
 # site
-node 'db.preda.ca' { include role::db }
+node 'db.as.ubc.ca' { include role::db }
 node default { include role::default }
-node 'puppet.preda.ca' { include role::puppetserver }
-node 'web.preda.ca' { include role::webserver }
+node 'puppet.as.ubc.ca' { include role::puppetserver }
+node 'web.as.ubc.ca' { include role::webserver }

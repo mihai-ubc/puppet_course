@@ -64,9 +64,9 @@ gems.each do |gem_name, gem_params|
   gem gem_name, *gem_params
 end
 
-# Evaluate Gemfile.preda.ca and ~/.gemfile if they exist
+# Evaluate Gemfile.as.ubc.ca and ~/.gemfile if they exist
 extra_gemfiles = [
-  "#{__FILE__}.preda.ca",
+  "#{__FILE__}.as.ubc.ca",
   File.join(Dir.home, '.gemfile'),
 ]
 
