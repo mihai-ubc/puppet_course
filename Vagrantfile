@@ -12,8 +12,8 @@ Vagrant.configure("2") do |config|
     puppet.vm.network :private_network, ip: "172.16.10.10", netmask: "255.255.255.0"
     puppet.vm.hostname = "puppet.as.ubc.ca"  
     puppet.vm.synced_folder ".", "/puppet_course"
-    puppet.vm.provider :vmware_desktop do |vb|
-      vb.memory = "3072"
+    puppet.vm.provider :vmware_desktop do |vd|
+      vd.memory = "3072"
     end
  end
 
